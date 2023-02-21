@@ -1,0 +1,75 @@
+n = 0
+while n<10:
+    if n==5:
+        break
+    print(n)
+    n += 1
+    
+    
+    
+n = 0
+while n<5:
+    print(n)
+    n=n+1
+else:
+    print(n, "is not less than 5")
+    
+    
+    
+fruitlist=["banana", "orange", "apple", "watermelon"]
+for fruit in fruitlist:
+    if fruit=="apple":
+        print(fruit, "is really a fruit?")
+        break
+    print("I like", fruit)
+    
+    
+    
+n = 30
+sum = 0
+i = 1
+
+while i <= n:
+    sum = sum + i
+    i += 1
+print(sum)
+
+
+
+score = 55
+if 90 <= score:
+    print("A")
+elif 80 <= score < 90:
+    print("B")
+elif 70 <= score < 80:
+    print("C")
+elif 60 <= score < 70:
+    print("D")
+else:
+    print("F")
+    
+
+
+marks = {'Andy':88, 'Amy':66, 'James': 90, 'Jules': 55, 'Arthur': 77}
+for k, v in marks.items():
+    print("Name is", k, "and grade is", v)
+    
+print('\n')
+    
+print("Maximal grade is", max(marks.values()))
+print("Minimal grade is", min(marks.values()))
+print("Mean grade is", (55+66+77+88+90)/5)
+
+print('\n')
+
+for k in marks.keys():
+    if "J" in k:
+        break
+    print(k)
+    
+print('\n')
+
+for k in marks.keys():
+    if "J" in k:
+        continue
+    print(k)
